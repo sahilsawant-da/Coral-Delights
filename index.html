@@ -1,693 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coral Delights | Luxury Agro Exports & Bespoke Catering</title>
-    
-    <!-- Meta SEO & Social Tags -->
-    <meta name="description" content="Coral Delights - Premier global exporters of dehydrated fruits, vegetables & spices, and purveyors of luxury bespoke catering services.">
-    <meta name="keywords" content="dehydrated food export, dried fruit suppliers, luxury event catering, wedding caterers, dehydrated onion flakes, ISO certified exporter">
-    
-    <!-- Underrated Premium Fonts (Cormorant Garamond + Cabinet Grotesk) & FontAwesome Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Coral Delights | Luxury Agro Exports & Bespoke Catering</title>
+<meta name="description" content="Coral Delights - Premier global exporters of dehydrated fruits, vegetables & spices, and purveyors of luxury bespoke catering services.">
+<meta name="keywords" content="dehydrated food export, dried fruit suppliers, luxury event catering, wedding caterers, dehydrated onion flakes, ISO certified exporter">
+<meta name="theme-color" content="#080B10">
+<meta property="og:title" content="Coral Delights | Luxury Agro Exports & Bespoke Catering">
+<meta property="og:description" content="Dehydrated agro exports and bespoke event catering.">
+<meta property="og:type" content="website">
 
-    <style>
-        :root {
-            --bg-dark: #080B10;
-            --bg-card: rgba(18, 24, 36, 0.75);
-            --bg-card-border: rgba(255, 255, 255, 0.08);
-            --accent-coral: #FF5E4D;
-            --accent-gold: #F39C12;
-            --accent-mint: #00E676;
-            --text-light: #F8FAFC;
-            --text-muted: #94A3B8;
-            /* Premium Font Family Definitions */
-            --font-heading: 'Cormorant Garamond', serif;
-            --font-body: 'Cabinet Grotesk', sans-serif;
-            --shadow-glow: 0 0 35px rgba(255, 94, 77, 0.2);
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Great+Vibes&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+<style>
+:root{
+  --bg-dark:#080B10;--bg-card:rgba(18,24,36,.75);--bg-card-border:rgba(255,255,255,.08);
+  --accent-coral:#FF5E4D;--accent-gold:#F39C12;--accent-mint:#00E676;
+  --text-light:#F8FAFC;--text-muted:#94A3B8;
+  --font-heading:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Cabinet Grotesk','Lato',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-script:'Great Vibes','Cormorant Garamond',cursive;
+  --shadow-glow:0 0 35px rgba(255,94,77,.2);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-body);background-color:var(--bg-dark);color:var(--text-light);
+  line-height:1.6;letter-spacing:.3px;overflow-x:hidden;
+  background-image:radial-gradient(circle at 10% 15%,rgba(255,94,77,.12) 0%,transparent 45%),radial-gradient(circle at 90% 55%,rgba(243,156,18,.1) 0%,transparent 50%);
+  background-attachment:fixed;
+}
+img{max-width:100%}
+.container{width:90%;max-width:1280px;margin:0 auto}
+:focus-visible{outline:2px solid var(--accent-gold);outline-offset:3px}
 
-        body {
-            font-family: var(--font-body);
-            background-color: var(--bg-dark);
-            color: var(--text-light);
-            line-height: 1.6;
-            letter-spacing: 0.3px;
-            overflow-x: hidden;
-            background-image: 
-                radial-gradient(circle at 10% 15%, rgba(255, 94, 77, 0.12) 0%, transparent 45%),
-                radial-gradient(circle at 90% 55%, rgba(243, 156, 18, 0.1) 0%, transparent 50%);
-            background-attachment: fixed;
-        }
+.flowing-text{
+  background:linear-gradient(90deg,#FF5E4D,#F39C12,#00E676,#00D2FF,#FF5E4D);background-size:300% 300%;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  animation:flowingGradient 6s ease infinite;font-weight:700;
+}
+@keyframes flowingGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 
-        .container {
-            width: 90%;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
+/* Header */
+header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,11,16,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--bg-card-border);padding-top:env(safe-area-inset-top,0px)}
+.nav-container{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px}
+.logo{font-family:var(--font-heading);font-size:2.2rem;font-weight:700;color:var(--text-light);text-decoration:none;letter-spacing:2px;text-transform:uppercase;white-space:nowrap}
+.nav-controls{display:flex;align-items:center;gap:16px}
+.lang-select{font-family:var(--font-body);background:rgba(255,255,255,.05);color:var(--text-light);border:1px solid var(--bg-card-border);padding:8px 14px;border-radius:20px;font-size:.9rem;cursor:pointer;outline:none;max-width:140px}
+.lang-select option{background:#121824;color:#fff}
 
-        /* Continuous Color Flowing Gradient Font */
-        .flowing-text {
-            background: linear-gradient(90deg, #FF5E4D, #F39C12, #00E676, #00D2FF, #FF5E4D);
-            background-size: 300% 300%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: flowingGradient 6s ease infinite;
-            font-weight: 700;
-        }
+/* Buttons */
+.btn{font-family:var(--font-body);display:inline-flex;align-items:center;gap:10px;padding:12px 26px;border-radius:50px;font-weight:600;font-size:1rem;text-decoration:none;transition:all .3s cubic-bezier(.165,.84,.44,1);cursor:pointer;border:none;letter-spacing:.5px;color:var(--text-light)}
+.btn-glow{background:linear-gradient(135deg,var(--accent-coral),var(--accent-gold));color:#fff;box-shadow:0 0 25px rgba(255,94,77,.35)}
+.btn-glow:hover{transform:translateY(-3px);box-shadow:0 0 35px rgba(255,94,77,.65)}
+.btn-ghost{background:rgba(255,255,255,.06);color:var(--text-light)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
 
-        @keyframes flowingGradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+/* Hero */
+.hero{padding:180px 0 80px;text-align:center}
+.hero h1{font-family:var(--font-heading);font-size:clamp(2.6rem,6vw,5.2rem);font-weight:600;margin-bottom:18px;line-height:1.15;letter-spacing:1px}
+.hero p{font-size:1.2rem;color:var(--text-muted);max-width:780px;margin:0 auto 35px;font-weight:400}
+.domain-toggle{display:inline-flex;background:rgba(255,255,255,.04);border:1px solid var(--bg-card-border);padding:6px;border-radius:40px;margin-bottom:40px}
+.tab-btn{font-family:var(--font-body);font-size:1rem;padding:12px 28px;border-radius:30px;background:transparent;color:var(--text-muted);border:none;font-weight:600;cursor:pointer;transition:.3s ease}
+.tab-btn:hover{color:var(--text-light)}
+.tab-btn.active{background:var(--accent-coral);color:#fff;box-shadow:0 4px 15px rgba(255,94,77,.4)}
 
-        /* Header Navigation */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(8, 11, 16, 0.85);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--bg-card-border);
-        }
+/* Trust strip (new) */
+.trust{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;color:var(--text-muted);font-size:.9rem}
+.trust span{display:inline-flex;align-items:center;gap:8px}
+.trust i{color:var(--accent-gold)}
 
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-        }
+.content-section{display:none;padding:20px 0 80px}
+.content-section.active{display:block;animation:fadeIn .5s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.section-head{text-align:center;margin-bottom:40px}
+.section-head h2{font-family:var(--font-heading);font-size:clamp(2.1rem,5vw,2.8rem);margin-bottom:8px;line-height:1.2}
+.section-head p{color:var(--text-muted)}
 
-        .logo {
-            font-family: var(--font-heading);
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: var(--text-light);
-            text-decoration: none;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:25px}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:30px}
 
-        .nav-controls {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
+.glass-card{background:var(--bg-card);border:1px solid var(--bg-card-border);border-radius:20px;padding:30px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:.3s ease}
+.glass-card:hover{border-color:rgba(255,94,77,.4);transform:translateY(-4px)}
 
-        .lang-select {
-            font-family: var(--font-body);
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--text-light);
-            border: 1px solid var(--bg-card-border);
-            padding: 8px 14px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            outline: none;
-        }
+.item-card{background:rgba(14,20,30,.85);border-radius:18px;padding:26px;border:1px solid var(--bg-card-border);display:flex;flex-direction:column;justify-content:space-between;transition:.3s ease}
+.item-card:hover{border-color:rgba(255,94,77,.35);transform:translateY(-4px)}
+.item-card h4{font-family:var(--font-heading);font-size:1.7rem;font-weight:600;letter-spacing:.5px;margin-bottom:6px;color:var(--text-light);line-height:1.2}
+.item-card p{color:var(--text-muted);font-size:.95rem;margin-bottom:15px}
+.item-actions{display:flex;flex-direction:column;gap:8px}
+.item-actions .btn{width:100%;justify-content:center}
+.tag{font-size:.75rem;padding:4px 12px;border-radius:20px;background:rgba(0,230,118,.12);color:var(--accent-mint);display:inline-block;margin-bottom:12px;font-weight:600;letter-spacing:.5px}
 
-        .lang-select option {
-            background: #121824;
-            color: #fff;
-        }
+/* NEW: Occasions section */
+.occasions{margin-bottom:80px}
+.script-title{font-family:var(--font-script);font-weight:400;font-size:clamp(2.6rem,7vw,4.2rem);line-height:1.2;letter-spacing:1px;color:var(--text-light)}
+.occ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.occ-card{
+  position:relative;display:flex;align-items:center;justify-content:center;text-align:center;
+  aspect-ratio:4/3;border-radius:6px;overflow:hidden;cursor:pointer;border:0;padding:20px;color:#fff;
+  font-family:'Lato',var(--font-body);font-style:italic;font-weight:700;font-size:clamp(1.05rem,2vw,1.55rem);line-height:1.3;
+  background:var(--grad),#161F2E;background-size:cover;background-position:center;isolation:isolate;
+}
+/* To use real photos: set --img on the card, e.g. style="--img:url('images/wedding.jpg')" */
+.occ-card::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--img,none) center/cover no-repeat;transition:transform .6s ease}
+.occ-card::after{
+  content:"";position:absolute;inset:0;z-index:-1;transition:.4s ease;
+  background:
+    linear-gradient(#fff,#fff) top center/2px 26px no-repeat,
+    linear-gradient(#fff,#fff) bottom center/2px 26px no-repeat,
+    linear-gradient(#fff,#fff) left center/26px 2px no-repeat,
+    linear-gradient(#fff,#fff) right center/26px 2px no-repeat,
+    linear-gradient(rgba(8,11,16,.55),rgba(8,11,16,.6));
+}
+.occ-card span{text-shadow:0 2px 10px rgba(0,0,0,.8);position:relative;z-index:1;transition:transform .4s ease}
+.occ-card i{position:absolute;top:16px;right:16px;font-size:1rem;color:var(--accent-gold);opacity:0;transition:.3s;z-index:1}
+.occ-card:hover::before{transform:scale(1.08)}
+.occ-card:hover::after,.occ-card:focus-visible::after{
+  background:
+    linear-gradient(var(--accent-gold),var(--accent-gold)) top center/2px 44px no-repeat,
+    linear-gradient(var(--accent-gold),var(--accent-gold)) bottom center/2px 44px no-repeat,
+    linear-gradient(var(--accent-gold),var(--accent-gold)) left center/44px 2px no-repeat,
+    linear-gradient(var(--accent-gold),var(--accent-gold)) right center/44px 2px no-repeat,
+    linear-gradient(rgba(8,11,16,.35),rgba(8,11,16,.5));
+}
+.occ-card:hover span{transform:scale(1.05)}
+.occ-card:hover i{opacity:1}
+.occ-more{text-align:center;margin-top:34px;font-family:'Lato',var(--font-body);font-style:italic;font-weight:700;font-size:1.5rem;color:var(--accent-gold)}
+.occ-more small{display:block;font-style:normal;font-weight:400;font-size:.95rem;color:var(--text-muted);margin:6px 0 18px}
 
-        /* Premium Buttons */
-        .btn {
-            font-family: var(--font-body);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 26px;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-            cursor: pointer;
-            border: none;
-            letter-spacing: 0.5px;
-        }
+/* Menu builder */
+.menu-builder-box{background:var(--bg-card);border:1px solid var(--accent-coral);border-radius:24px;padding:35px}
+.menu-category-title{font-family:var(--font-heading);color:var(--accent-gold);font-size:1.6rem;font-weight:600;margin-bottom:15px;border-bottom:1px solid var(--bg-card-border);padding-bottom:8px;letter-spacing:.5px}
+.checkbox-group{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:12px;margin-bottom:25px}
+.checkbox-item{display:flex;align-items:center;gap:10px;font-size:.95rem;cursor:pointer;color:var(--text-light);padding:6px 4px;border-radius:8px}
+.checkbox-item:hover{background:rgba(255,255,255,.04)}
+.checkbox-item input[type="checkbox"]{accent-color:var(--accent-coral);width:20px;height:20px;flex-shrink:0}
+.summary-count{display:inline-block;margin-left:8px;font-size:.85rem;background:rgba(255,94,77,.18);color:var(--accent-coral);padding:2px 12px;border-radius:20px;font-family:var(--font-body);vertical-align:middle}
 
-        .btn-glow {
-            background: linear-gradient(135deg, var(--accent-coral), var(--accent-gold));
-            color: #fff;
-            box-shadow: 0 0 25px rgba(255, 94, 77, 0.35);
-        }
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:20px;margin-top:30px}
+.gallery-item{position:relative;border-radius:16px;overflow:hidden;height:220px;background:#161F2E;border:1px solid var(--bg-card-border);display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--text-muted);transition:.3s ease;text-align:center;padding:12px}
+.gallery-item:hover{border-color:var(--accent-gold);transform:scale(1.02)}
+.gallery-item i{font-size:2.5rem;margin-bottom:10px;color:var(--accent-coral)}
+.gallery-item span{font-family:var(--font-heading);font-size:1.3rem;color:var(--text-light)}
 
-        .btn-glow:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 35px rgba(255, 94, 77, 0.65);
-        }
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:2000;display:none;align-items:center;justify-content:center;padding:16px}
+.modal-overlay.active{display:flex;animation:fadeIn .25s ease}
+.modal-content{background:#121824;border:1px solid var(--accent-coral);border-radius:24px;padding:35px;max-width:550px;width:100%;position:relative;max-height:90vh;overflow-y:auto}
+.close-modal{position:absolute;top:14px;right:14px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:var(--text-muted);cursor:pointer;background:none;border:none;border-radius:50%}
+.close-modal:hover{color:#fff;background:rgba(255,255,255,.08)}
 
-        /* Hero Section */
-        .hero {
-            padding: 180px 0 80px;
-            text-align: center;
-        }
+/* Footer (new) */
+footer{border-top:1px solid var(--bg-card-border);background:rgba(8,11,16,.7);padding:50px 0 30px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:30px;margin-bottom:30px}
+.footer-grid h5{font-family:var(--font-heading);font-size:1.4rem;color:var(--accent-gold);margin-bottom:10px}
+.footer-grid p,.footer-grid a{color:var(--text-muted);font-size:.95rem;text-decoration:none;display:block;margin-bottom:6px}
+.footer-grid a:hover{color:var(--text-light)}
+.footer-bottom{border-top:1px solid var(--bg-card-border);padding-top:20px;text-align:center;color:var(--text-muted);font-size:.85rem}
 
-        .hero h1 {
-            font-family: var(--font-heading);
-            font-size: clamp(2.8rem, 6vw, 5.2rem);
-            font-weight: 600;
-            margin-bottom: 18px;
-            line-height: 1.15;
-            letter-spacing: 1px;
-        }
+/* WhatsApp float */
+.whatsapp-float{position:fixed;bottom:calc(30px + env(safe-area-inset-bottom,0px));right:30px;width:65px;height:65px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 10px 30px rgba(37,211,102,.5);z-index:1500;text-decoration:none;transition:all .3s ease;animation:pulse 2.2s infinite}
+.whatsapp-float:hover{transform:scale(1.08)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 20px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
 
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            max-width: 780px;
-            margin: 0 auto 35px;
-            font-weight: 400;
-        }
-
-        /* Domain Toggle Navigation Switcher */
-        .domain-toggle {
-            display: inline-flex;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid var(--bg-card-border);
-            padding: 6px;
-            border-radius: 40px;
-            margin-bottom: 40px;
-        }
-
-        .tab-btn {
-            font-family: var(--font-body);
-            padding: 12px 28px;
-            border-radius: 30px;
-            background: transparent;
-            color: var(--text-muted);
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-
-        .tab-btn.active {
-            background: var(--accent-coral);
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(255, 94, 77, 0.4);
-        }
-
-        /* Dynamic Content Sections */
-        .content-section {
-            display: none;
-            padding: 20px 0 80px;
-        }
-
-        .content-section.active {
-            display: block;
-        }
-
-        /* Grid Framework */
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 30px;
-        }
-
-        /* Glass Cards */
-        .glass-card {
-            background: var(--bg-card);
-            border: 1px solid var(--bg-card-border);
-            border-radius: 20px;
-            padding: 30px;
-            backdrop-filter: blur(14px);
-            transition: 0.3s ease;
-        }
-
-        .glass-card:hover {
-            border-color: rgba(255, 94, 77, 0.4);
-            transform: translateY(-4px);
-        }
-
-        /* Product Catalog Cards */
-        .item-card {
-            background: rgba(14, 20, 30, 0.85);
-            border-radius: 18px;
-            padding: 26px;
-            border: 1px solid var(--bg-card-border);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .item-card h4 {
-            font-family: var(--font-heading);
-            font-size: 1.7rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            margin-bottom: 6px;
-            color: var(--text-light);
-        }
-
-        .tag {
-            font-size: 0.75rem;
-            padding: 4px 12px;
-            border-radius: 20px;
-            background: rgba(0, 230, 118, 0.12);
-            color: var(--accent-mint);
-            display: inline-block;
-            margin-bottom: 12px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
-        /* Interactive Menu Builder Styling */
-        .menu-builder-box {
-            background: var(--bg-card);
-            border: 1px solid var(--accent-coral);
-            border-radius: 24px;
-            padding: 35px;
-        }
-
-        .menu-category-title {
-            font-family: var(--font-heading);
-            color: var(--accent-gold);
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            border-bottom: 1px solid var(--bg-card-border);
-            padding-bottom: 8px;
-            letter-spacing: 0.5px;
-        }
-
-        .checkbox-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px;
-            margin-bottom: 25px;
-        }
-
-        .checkbox-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.95rem;
-            cursor: pointer;
-            color: var(--text-light);
-        }
-
-        .checkbox-item input[type="checkbox"] {
-            accent-color: var(--accent-coral);
-            width: 18px;
-            height: 18px;
-        }
-
-        /* Gallery Grid */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 16px;
-            overflow: hidden;
-            height: 220px;
-            background: #161F2E;
-            border: 1px solid var(--bg-card-border);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: var(--text-muted);
-            transition: 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            border-color: var(--accent-gold);
-            transform: scale(1.02);
-        }
-
-        .gallery-item i {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: var(--accent-coral);
-        }
-
-        .gallery-item span {
-            font-family: var(--font-heading);
-            font-size: 1.3rem;
-            color: var(--text-light);
-        }
-
-        /* Modal Overlay & Specs Box */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(12px);
-            z-index: 2000;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .modal-overlay.active {
-            display: flex;
-        }
-
-        .modal-content {
-            background: #121824;
-            border: 1px solid var(--accent-coral);
-            border-radius: 24px;
-            padding: 35px;
-            max-width: 550px;
-            width: 90%;
-            position: relative;
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 1.5rem;
-            color: var(--text-muted);
-            cursor: pointer;
-        }
-
-        /* Floating Premium WhatsApp Icon */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 65px;
-            height: 65px;
-            background: linear-gradient(135deg, #25D366, #128C7E);
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
-            z-index: 9999;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            animation: pulse 2.2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
-            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-        }
-
-        /* Mobile Adaptations */
-        @media (max-width: 768px) {
-            .hero { padding: 130px 0 50px; }
-            .domain-toggle { flex-direction: column; width: 100%; }
-            .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; font-size: 26px; }
-        }
-    </style>
+/* Tablet */
+@media (max-width:992px){
+  .occ-grid{grid-template-columns:repeat(2,1fr)}
+}
+/* Mobile */
+@media (max-width:768px){
+  .hero{padding:130px 0 50px}
+  .hero p{font-size:1.05rem}
+  .domain-toggle{flex-direction:column;width:100%;border-radius:28px}
+  .tab-btn{padding:14px 20px}
+  .logo{font-size:1.5rem;letter-spacing:1px}
+  .nav-controls{gap:8px}
+  .lang-select{padding:8px 10px;font-size:.85rem;max-width:112px}
+  #nav-btn-text{display:none}
+  .nav-container .btn{padding:11px 14px}
+  .menu-builder-box{padding:22px}
+  .glass-card{padding:22px}
+  .modal-content{padding:28px 22px}
+  .whatsapp-float{bottom:calc(20px + env(safe-area-inset-bottom,0px));right:20px;width:55px;height:55px;font-size:26px}
+  .occ-grid{gap:12px}
+  .occ-card{padding:10px;aspect-ratio:1/1}
+  .occ-card::after{background-size:2px 16px,2px 16px,16px 2px,16px 2px,auto}
+  .occasions{margin-bottom:60px}
+  .content-section{padding-bottom:60px}
+}
+@media (max-width:380px){
+  .logo{font-size:1.25rem}
+  .lang-select{max-width:96px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header>
-        <div class="container nav-container">
-            <a href="#" class="logo">CORAL <span class="flowing-text">DELIGHTS</span></a>
-            <div class="nav-controls">
-                <select class="lang-select" onchange="changeLanguage(this.value)">
-                    <option value="en">English</option>
-                    <option value="hi">हिन्दी (Hindi)</option>
-                    <option value="mr">मराठी (Marathi)</option>
-                    <option value="gu">ગુજરાતી (Gujarati)</option>
-                </select>
-                <a href="https://wa.me/919821239209?text=Hello%20Coral%20Delights,%20I%20have%20an%20inquiry." target="_blank" class="btn btn-glow">
-                    <i class="fa-brands fa-whatsapp"></i> <span id="nav-btn-text">Connect Now</span>
-                </a>
-            </div>
-        </div>
-    </header>
+<header>
+  <div class="container nav-container">
+    <a href="#" class="logo" aria-label="Coral Delights home">CORAL <span class="flowing-text">DELIGHTS</span></a>
+    <div class="nav-controls">
+      <select class="lang-select" onchange="changeLanguage(this.value)" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी (Hindi)</option>
+        <option value="mr">मराठी (Marathi)</option>
+        <option value="gu">ગુજરાતી (Gujarati)</option>
+      </select>
+      <a href="https://wa.me/919821239209?text=Hello%20Coral%20Delights,%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" class="btn btn-glow" aria-label="Connect on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i> <span id="nav-btn-text">Connect Now</span>
+      </a>
+    </div>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 id="hero-title">Elevate Your Senses with <br><span class="flowing-text">Coral Delights</span></h1>
-            <p id="hero-desc">Connecting international agro exports with world-class bespoke culinary experiences. Organic dried produce & high-end event catering.</p>
+<section class="hero">
+  <div class="container">
+    <h1 id="hero-title">Elevate Your Senses with <br><span class="flowing-text">Coral Delights</span></h1>
+    <p id="hero-desc">Connecting international agro exports with world-class bespoke culinary experiences. Organic dried produce & high-end event catering.</p>
 
-            <!-- Domain Switcher -->
-            <div class="domain-toggle">
-                <button class="tab-btn active" onclick="switchDomain('exports', this)">
-                    <i class="fa-solid fa-earth-americas"></i> B2B Agro Exports
-                </button>
-                <button class="tab-btn" onclick="switchDomain('catering', this)">
-                    <i class="fa-solid fa-utensils"></i> Event Catering & Menus
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 1: B2B AGRO EXPORTS -->
-    <section id="exports" class="content-section active">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h2 style="font-family: var(--font-heading); font-size: 2.8rem; margin-bottom: 8px;">Dehydrated Product Catalog</h2>
-                <p style="color: var(--text-muted);">Nutrient-Retained & Export-Certified Agricultural Products</p>
-            </div>
-
-            <!-- Products Grid -->
-            <div class="grid-3">
-                <div class="item-card">
-                    <div>
-                        <span class="tag">Export Grade A</span>
-                        <h4>Dried Alphonso Mango Slices</h4>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Sun-ripened Alphonso mangoes dried under hygienic low-temp conditions.</p>
-                    </div>
-                    <div>
-                        <button onclick="openSpecModal('Alphonso Mango Slices', '< 4%', '12 Months', 'Alu-Foil Vacuum Pouch (10kg/25kg)', 'FSSAI, ISO 22000, Organic')" class="btn" style="background: rgba(255,255,255,0.06); color: var(--text-light); width: 100%; justify-content: center; margin-bottom: 8px;">View Specifications</button>
-                        <button onclick="requestSample('Dried Alphonso Mango Slices')" class="btn btn-glow" style="width: 100%; justify-content: center;">Request Sample Kit</button>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div>
-                        <span class="tag">ISO 22000 Certified</span>
-                        <h4>Dehydrated Red Onion Flakes</h4>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">High pungent Indian red onions, ideal for soups, seasonings & ready-meals.</p>
-                    </div>
-                    <div>
-                        <button onclick="openSpecModal('Red Onion Flakes', '< 5%', '18 Months', 'Poly-lined Carton Boxes (20kg)', 'FSSAI, Halal, ISO')" class="btn" style="background: rgba(255,255,255,0.06); color: var(--text-light); width: 100%; justify-content: center; margin-bottom: 8px;">View Specifications</button>
-                        <button onclick="requestSample('Red Onion Flakes')" class="btn btn-glow" style="width: 100%; justify-content: center;">Request Sample Kit</button>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div>
-                        <span class="tag">Zero Preservatives</span>
-                        <h4>Garlic Granules & Fine Powder</h4>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Pure aroma retention, moisture sealed for international cargo shipping.</p>
-                    </div>
-                    <div>
-                        <button onclick="openSpecModal('Garlic Powder', '< 4.5%', '24 Months', 'Heavy-Duty Fiber Drums', 'FSSAI, ISO 22000')" class="btn" style="background: rgba(255,255,255,0.06); color: var(--text-light); width: 100%; justify-content: center; margin-bottom: 8px;">View Specifications</button>
-                        <button onclick="requestSample('Garlic Powder')" class="btn btn-glow" style="width: 100%; justify-content: center;">Request Sample Kit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 2: CATERING & MENU BUILDER -->
-    <section id="catering" class="content-section">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h2 style="font-family: var(--font-heading); font-size: 2.8rem; margin-bottom: 8px;">Interactive Custom Menu Builder</h2>
-                <p style="color: var(--text-muted);">Select your dishes & estimate guest package pricing instantly</p>
-            </div>
-
-            <div class="grid-2">
-                <!-- Interactive Selector -->
-                <div class="menu-builder-box">
-                    <div class="menu-category-title">1. Gourmet Starters</div>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" value="Paneer Tikka Grill" onchange="updateMenuSelection()"> Paneer Tikka Grill</label>
-                        <label class="checkbox-item"><input type="checkbox" value="Crispy Lotus Stem" onchange="updateMenuSelection()"> Crispy Lotus Stem</label>
-                        <label class="checkbox-item"><input type="checkbox" value="Tandoori Dimsums" onchange="updateMenuSelection()"> Tandoori Dimsums</label>
-                    </div>
-
-                    <div class="menu-category-title">2. Main Course & Signature Delights</div>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" value="Dal Makhani Royale" onchange="updateMenuSelection()"> Dal Makhani Royale</label>
-                        <label class="checkbox-item"><input type="checkbox" value="Exotic Vegetable Dum Biryani" onchange="updateMenuSelection()"> Dum Biryani</label>
-                        <label class="checkbox-item"><input type="checkbox" value="Artisanal Breads Counter" onchange="updateMenuSelection()"> Artisanal Breads</label>
-                    </div>
-
-                    <div class="menu-category-title">3. Live Counters & Desserts</div>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" value="Live Pasta & Pizza Bar" onchange="updateMenuSelection()"> Live Pasta Bar</label>
-                        <label class="checkbox-item"><input type="checkbox" value="Saffron Rasmalai" onchange="updateMenuSelection()"> Saffron Rasmalai</label>
-                        <label class="checkbox-item"><input type="checkbox" value="Craft Mocktail Bar" onchange="updateMenuSelection()"> Craft Mocktails</label>
-                    </div>
-                </div>
-
-                <!-- Live Summary Box -->
-                <div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h3 style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;">Your Selected Menu</h3>
-                        <div id="selectedItemsSummary" style="color: var(--text-muted); min-height: 120px; font-size: 0.95rem;">
-                            No items selected yet. Please check the options on the left.
-                        </div>
-                    </div>
-                    <div>
-                        <div style="border-top: 1px solid var(--bg-card-border); padding-top: 15px; margin-top: 15px;">
-                            <label style="font-size: 0.9rem; color: var(--text-muted);">Estimated Guests:</label>
-                            <input type="number" id="menuGuestCount" value="150" min="20" style="font-family: var(--font-body); width: 100%; padding: 10px; border-radius: 10px; background: rgba(0,0,0,0.5); border: 1px solid var(--bg-card-border); color: #fff; margin-top: 5px;" oninput="updateMenuSelection()">
-                        </div>
-                        <button onclick="sendMenuWhatsApp()" class="btn btn-glow" style="width: 100%; justify-content: center; margin-top: 20px;">
-                            <i class="fa-brands fa-whatsapp"></i> Send Menu Choice via WhatsApp
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Visual Portfolio -->
-            <div style="margin-top: 70px;">
-                <div style="text-align: center; margin-bottom: 30px;">
-                    <h3 style="font-family: var(--font-heading); font-size: 2.2rem;">Event Experience Gallery</h3>
-                    <p style="color: var(--text-muted);">Sneak peek into our culinary setups and decor executions</p>
-                </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <i class="fa-solid fa-glass-cheers"></i>
-                        <span>Luxury Wedding Setup</span>
-                    </div>
-                    <div class="gallery-item">
-                        <i class="fa-solid fa-building"></i>
-                        <span>Corporate Annual Gala</span>
-                    </div>
-                    <div class="gallery-item">
-                        <i class="fa-solid fa-fire-burner"></i>
-                        <span>Live Mongolian Grill Bar</span>
-                    </div>
-                    <div class="gallery-item">
-                        <i class="fa-solid fa-boxes-packing"></i>
-                        <span>Export Packaging Facility</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Spec Modal -->
-    <div id="specModal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeSpecModal()">&times;</span>
-            <h3 id="modalProductName" class="flowing-text" style="font-family: var(--font-heading); font-size: 2.2rem; margin-bottom: 20px;">Product Specs</h3>
-            <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
-                <div><strong>Moisture Content:</strong> <span id="modalMoisture" style="color: var(--accent-gold);"></span></div>
-                <div><strong>Shelf Life:</strong> <span id="modalShelf" style="color: var(--text-light);"></span></div>
-                <div><strong>Packaging Type:</strong> <span id="modalPackaging" style="color: var(--text-light);"></span></div>
-                <div><strong>Quality Certifications:</strong> <span id="modalCerts" style="color: var(--accent-mint);"></span></div>
-            </div>
-            <button onclick="closeSpecModal()" class="btn btn-glow" style="width: 100%; justify-content: center; margin-top: 25px;">Close Panel</button>
-        </div>
+    <div class="domain-toggle" role="tablist">
+      <button class="tab-btn active" role="tab" onclick="switchDomain('exports', this)">
+        <i class="fa-solid fa-earth-americas"></i> B2B Agro Exports
+      </button>
+      <button class="tab-btn" role="tab" onclick="switchDomain('catering', this)">
+        <i class="fa-solid fa-utensils"></i> Event Catering & Menus
+      </button>
     </div>
 
-    <!-- Floating Premium WhatsApp Icon -->
-    <a href="https://wa.me/919821239209?text=Hello%20Coral%20Delights,%20I%20have%20an%20inquiry." 
-       class="whatsapp-float" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Direct WhatsApp Contact">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <div class="trust">
+      <span><i class="fa-solid fa-certificate"></i> ISO 22000 Certified</span>
+      <span><i class="fa-solid fa-shield-halved"></i> FSSAI Licensed</span>
+      <span><i class="fa-solid fa-ship"></i> Worldwide Shipping</span>
+      <span><i class="fa-solid fa-champagne-glasses"></i> Bespoke Event Catering</span>
+    </div>
+  </div>
+</section>
 
-    <!-- Interactive Logic Scripts -->
-    <script>
-        // Multi-Language Translation Map
-        const translations = {
-            en: { title: "Elevate Your Senses with", desc: "Connecting international agro exports with world-class bespoke culinary experiences. Organic dried produce & high-end event catering.", btn: "Connect Now" },
-            hi: { title: "उत्कृष्ट स्वादों का आनंद लें", desc: "अंतरराष्ट्रीय कृषि निर्यात और विश्वस्तरीय इवेंट केटरिंग का शानदार संगम। निर्जलित उत्पाद एवं प्रीमियम केटरिंग।", btn: "संपर्क करें" },
-            mr: { title: "उत्कृष्ट चवीचा अनुभव घ्या", desc: "जागतिक कृषी व्यापार आणि लक्झरी केटरिंगचा मेळ. उच्च दर्जाची वाळवलेली फळे-भाज्या निर्यात आणि इव्हेंट केटरिंग.", btn: "संपर्क साधा" },
-            gu: { title: "ઉત્કૃષ્ટ સ્વાદનો અનુભવ કરો", desc: "ગ્લોબલ એગ્રી એક્સપોર્ટ અને લક્ઝરી કેટરીંગ સેવાઓ. પ્રીમિયમ ડીહાઇડ્રેટેડ ફૂડ નિકાસ અને ઇવેન્ટ કેટરીંગ.", btn: "સંપર્ક કરો" }
-        };
+<!-- SECTION 1: B2B AGRO EXPORTS -->
+<section id="exports" class="content-section active">
+  <div class="container">
+    <div class="section-head">
+      <h2>Dehydrated Product Catalog</h2>
+      <p>Nutrient-Retained & Export-Certified Agricultural Products</p>
+    </div>
 
-        function changeLanguage(lang) {
-            document.getElementById('hero-title').innerHTML = `${translations[lang].title} <br><span class="flowing-text">Coral Delights</span>`;
-            document.getElementById('hero-desc').innerText = translations[lang].desc;
-            document.getElementById('nav-btn-text').innerText = translations[lang].btn;
-        }
+    <div class="grid-3">
+      <div class="item-card">
+        <div>
+          <span class="tag">Export Grade A</span>
+          <h4>Dried Alphonso Mango Slices</h4>
+          <p>Sun-ripened Alphonso mangoes dried under hygienic low-temp conditions.</p>
+        </div>
+        <div class="item-actions">
+          <button onclick="openSpecModal('Alphonso Mango Slices', '< 4%', '12 Months', 'Alu-Foil Vacuum Pouch (10kg/25kg)', 'FSSAI, ISO 22000, Organic')" class="btn btn-ghost">View Specifications</button>
+          <button onclick="requestSample('Dried Alphonso Mango Slices')" class="btn btn-glow">Request Sample Kit</button>
+        </div>
+      </div>
 
-        // Domain Switcher (B2B vs B2C)
-        function switchDomain(domainId, btn) {
-            document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(domainId).classList.add('active');
-            btn.classList.add('active');
-        }
+      <div class="item-card">
+        <div>
+          <span class="tag">ISO 22000 Certified</span>
+          <h4>Dehydrated Red Onion Flakes</h4>
+          <p>High pungent Indian red onions, ideal for soups, seasonings & ready-meals.</p>
+        </div>
+        <div class="item-actions">
+          <button onclick="openSpecModal('Red Onion Flakes', '< 5%', '18 Months', 'Poly-lined Carton Boxes (20kg)', 'FSSAI, Halal, ISO')" class="btn btn-ghost">View Specifications</button>
+          <button onclick="requestSample('Red Onion Flakes')" class="btn btn-glow">Request Sample Kit</button>
+        </div>
+      </div>
 
-        // Technical Spec Modal Display
-        function openSpecModal(name, moisture, shelf, packaging, certs) {
-            document.getElementById('modalProductName').innerText = name;
-            document.getElementById('modalMoisture').innerText = moisture;
-            document.getElementById('modalShelf').innerText = shelf;
-            document.getElementById('modalPackaging').innerText = packaging;
-            document.getElementById('modalCerts').innerText = certs;
-            document.getElementById('specModal').classList.add('active');
-        }
+      <div class="item-card">
+        <div>
+          <span class="tag">Zero Preservatives</span>
+          <h4>Garlic Granules & Fine Powder</h4>
+          <p>Pure aroma retention, moisture sealed for international cargo shipping.</p>
+        </div>
+        <div class="item-actions">
+          <button onclick="openSpecModal('Garlic Powder', '< 4.5%', '24 Months', 'Heavy-Duty Fiber Drums', 'FSSAI, ISO 22000')" class="btn btn-ghost">View Specifications</button>
+          <button onclick="requestSample('Garlic Powder')" class="btn btn-glow">Request Sample Kit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        function closeSpecModal() {
-            document.getElementById('specModal').classList.remove('active');
-        }
+<!-- SECTION 2: CATERING & MENU BUILDER -->
+<section id="catering" class="content-section">
+  <div class="container">
 
-        // Interactive Menu Selection Collector
-        let selectedDishes = [];
+    <!-- NEW: Occasions -->
+    <div class="occasions">
+      <div class="section-head">
+        <h2 class="script-title">Spice Up Your Occasions...</h2>
+        <p>Tap any occasion to start an enquiry on WhatsApp</p>
+      </div>
+      <div class="occ-grid">
+        <!-- Replace --img with your own photos, e.g. --img:url('images/wedding.jpg') -->
+        <button class="occ-card" style="--grad:linear-gradient(135deg,#6b2d1f,#2b1018)" onclick="enquireOccasion('Marriage Related Parties')"><span>Marriage Related Parties</span><i class="fa-brands fa-whatsapp"></i></button>
+        <button class="occ-card" style="--grad:linear-gradient(135deg,#4a1f3d,#1a0d1a)" onclick="enquireOccasion('Lunch & Dinner Parties')"><span>Lunch & Dinner Parties</span><i class="fa-brands fa-whatsapp"></i></button>
+        <button class="occ-card" style="--grad:linear-gradient(135deg,#2a2f6b,#12112b)" onclick="enquireOccasion('Anniversary Celebration Parties')"><span>Anniversary Celebration Parties</span><i class="fa-brands fa-whatsapp"></i></button>
+        <button class="occ-card" style="--grad:linear-gradient(135deg,#1f4a3a,#0b1a16)" onclick="enquireOccasion('Corporate Services')"><span>Corporate Services</span><i class="fa-brands fa-whatsapp"></i></button>
+        <button class="occ-card" style="--grad:linear-gradient(135deg,#7a5a1f,#2a1c0a)" onclick="enquireOccasion('Family Get-Together')"><span>Family Get-Together</span><i class="fa-brands fa-whatsapp"></i></button>
+        <button class="occ-card" style="--grad:linear-gradient(135deg,#8a3a12,#2b1306)" onclick="enquireOccasion('Festival Celebrations')"><span>Festival Celebrations</span><i class="fa-brands fa-whatsapp"></i></button>
+      </div>
+      <div class="occ-more">
+        And lots More...
+        <small>Birthdays, baby showers, poolside parties, cocktail nights and more.</small>
+        <button class="btn btn-glow" onclick="enquireOccasion('a custom occasion')"><i class="fa-brands fa-whatsapp"></i> Tell us your occasion</button>
+      </div>
+    </div>
 
-        function updateMenuSelection() {
-            selectedDishes = [];
-            const checkboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked');
-            checkboxes.forEach(cb => selectedDishes.push(cb.value));
+    <div class="section-head">
+      <h2>Interactive Custom Menu Builder</h2>
+      <p>Select your dishes & estimate guest package pricing instantly</p>
+    </div>
 
-            const summaryBox = document.getElementById('selectedItemsSummary');
-            if (selectedDishes.length === 0) {
-                summaryBox.innerHTML = 'No items selected yet. Please check the options on the left.';
-            } else {
-                summaryBox.innerHTML = '<ul style="padding-left:18px;">' + selectedDishes.map(d => `<li style="margin-bottom:4px; color:#fff;">${d}</li>`).join('') + '</ul>';
-            }
-        }
+    <div class="grid-2">
+      <div class="menu-builder-box">
+        <div class="menu-category-title">1. Gourmet Starters</div>
+        <div class="checkbox-group">
+          <label class="checkbox-item"><input type="checkbox" value="Paneer Tikka Grill" onchange="updateMenuSelection()"> Paneer Tikka Grill</label>
+          <label class="checkbox-item"><input type="checkbox" value="Crispy Lotus Stem" onchange="updateMenuSelection()"> Crispy Lotus Stem</label>
+          <label class="checkbox-item"><input type="checkbox" value="Tandoori Dimsums" onchange="updateMenuSelection()"> Tandoori Dimsums</label>
+        </div>
 
-        // Dynamic WhatsApp Builder Functions
-        function requestSample(productName) {
-            const msg = encodeURIComponent(`Hello Coral Delights! I would like to request a sample kit and export specifications for: ${productName}.`);
-            window.open(`https://wa.me/919821239209?text=${msg}`, '_blank');
-        }
+        <div class="menu-category-title">2. Main Course & Signature Delights</div>
+        <div class="checkbox-group">
+          <label class="checkbox-item"><input type="checkbox" value="Dal Makhani Royale" onchange="updateMenuSelection()"> Dal Makhani Royale</label>
+          <label class="checkbox-item"><input type="checkbox" value="Exotic Vegetable Dum Biryani" onchange="updateMenuSelection()"> Dum Biryani</label>
+          <label class="checkbox-item"><input type="checkbox" value="Artisanal Breads Counter" onchange="updateMenuSelection()"> Artisanal Breads</label>
+        </div>
 
-        function sendMenuWhatsApp() {
-            const guests = document.getElementById('menuGuestCount').value;
-            if (selectedDishes.length === 0) {
-                alert('Please select at least one item from the menu builder options!');
-                return;
-            }
-            const itemsList = selectedDishes.join(', ');
-            const msg = encodeURIComponent(`Hello Coral Delights! I have selected a custom event menu:\n\n*Guests:* ${guests}\n*Selected Dishes:* ${itemsList}\n\nPlease share estimated pricing and availability.`);
-            window.open(`https://wa.me/919821239209?text=${msg}`, '_blank');
-        }
-    </script>
+        <div class="menu-category-title">3. Live Counters & Desserts</div>
+        <div class="checkbox-group" style="margin-bottom:0">
+          <label class="checkbox-item"><input type="checkbox" value="Live Pasta & Pizza Bar" onchange="updateMenuSelection()"> Live Pasta Bar</label>
+          <label class="checkbox-item"><input type="checkbox" value="Saffron Rasmalai" onchange="updateMenuSelection()"> Saffron Rasmalai</label>
+          <label class="checkbox-item"><input type="checkbox" value="Craft Mocktail Bar" onchange="updateMenuSelection()"> Craft Mocktails</label>
+        </div>
+      </div>
+
+      <div class="glass-card" style="display:flex;flex-direction:column;justify-content:space-between">
+        <div>
+          <h3 style="font-family:var(--font-heading);font-size:2rem;color:var(--accent-gold);margin-bottom:15px">Your Selected Menu <span id="selectedCount" class="summary-count" hidden></span></h3>
+          <div id="selectedItemsSummary" style="color:var(--text-muted);min-height:120px;font-size:.95rem">
+            No items selected yet. Please check the options on the left.
+          </div>
+        </div>
+        <div>
+          <div style="border-top:1px solid var(--bg-card-border);padding-top:15px;margin-top:15px">
+            <label for="menuGuestCount" style="font-size:.9rem;color:var(--text-muted)">Estimated Guests:</label>
+            <input type="number" inputmode="numeric" id="menuGuestCount" value="150" min="20" style="font-family:var(--font-body);font-size:1rem;width:100%;padding:12px;border-radius:10px;background:rgba(0,0,0,.5);border:1px solid var(--bg-card-border);color:#fff;margin-top:5px" oninput="updateMenuSelection()">
+          </div>
+          <button onclick="sendMenuWhatsApp()" class="btn btn-glow" style="width:100%;justify-content:center;margin-top:20px">
+            <i class="fa-brands fa-whatsapp"></i> Send Menu Choice via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:70px">
+      <div class="section-head" style="margin-bottom:30px">
+        <h3 style="font-family:var(--font-heading);font-size:clamp(1.8rem,4.5vw,2.2rem)">Event Experience Gallery</h3>
+        <p>Sneak peek into our culinary setups and decor executions</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><i class="fa-solid fa-glass-cheers"></i><span>Luxury Wedding Setup</span></div>
+        <div class="gallery-item"><i class="fa-solid fa-building"></i><span>Corporate Annual Gala</span></div>
+        <div class="gallery-item"><i class="fa-solid fa-fire-burner"></i><span>Live Mongolian Grill Bar</span></div>
+        <div class="gallery-item"><i class="fa-solid fa-boxes-packing"></i><span>Export Packaging Facility</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Spec Modal -->
+<div id="specModal" class="modal-overlay" onclick="if(event.target===this)closeSpecModal()" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+  <div class="modal-content">
+    <button class="close-modal" onclick="closeSpecModal()" aria-label="Close">&times;</button>
+    <h3 id="modalProductName" class="flowing-text" style="font-family:var(--font-heading);font-size:2.2rem;margin-bottom:20px;line-height:1.2">Product Specs</h3>
+    <div style="display:flex;flex-direction:column;gap:12px;font-size:.95rem">
+      <div><strong>Moisture Content:</strong> <span id="modalMoisture" style="color:var(--accent-gold)"></span></div>
+      <div><strong>Shelf Life:</strong> <span id="modalShelf" style="color:var(--text-light)"></span></div>
+      <div><strong>Packaging Type:</strong> <span id="modalPackaging" style="color:var(--text-light)"></span></div>
+      <div><strong>Quality Certifications:</strong> <span id="modalCerts" style="color:var(--accent-mint)"></span></div>
+    </div>
+    <button onclick="closeSpecModal()" class="btn btn-glow" style="width:100%;justify-content:center;margin-top:25px">Close Panel</button>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5>Coral Delights</h5>
+        <p>Global exporters of dehydrated fruits, vegetables & spices, and purveyors of luxury bespoke catering.</p>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <a href="https://wa.me/919821239209" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +91 98212 39209</a>
+        <a href="tel:+919821239209"><i class="fa-solid fa-phone"></i> Call us</a>
+      </div>
+      <div>
+        <h5>Quick links</h5>
+        <a href="#exports" onclick="goTo('exports')">Agro Exports</a>
+        <a href="#catering" onclick="goTo('catering')">Event Catering</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Coral Delights. All rights reserved.</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919821239209?text=Hello%20Coral%20Delights,%20I%20have%20an%20inquiry." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Direct WhatsApp Contact">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+const WA = 'https://wa.me/919821239209';
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const translations = {
+  en:{title:"Elevate Your Senses with",desc:"Connecting international agro exports with world-class bespoke culinary experiences. Organic dried produce & high-end event catering.",btn:"Connect Now"},
+  hi:{title:"उत्कृष्ट स्वादों का आनंद लें",desc:"अंतरराष्ट्रीय कृषि निर्यात और विश्वस्तरीय इवेंट केटरिंग का शानदार संगम। निर्जलित उत्पाद एवं प्रीमियम केटरिंग।",btn:"संपर्क करें"},
+  mr:{title:"उत्कृष्ट चवीचा अनुभव घ्या",desc:"जागतिक कृषी व्यापार आणि लक्झरी केटरिंगचा मेळ. उच्च दर्जाची वाळवलेली फळे-भाज्या निर्यात आणि इव्हेंट केटरिंग.",btn:"संपर्क साधा"},
+  gu:{title:"ઉત્કૃષ્ટ સ્વાદનો અનુભવ કરો",desc:"ગ્લોબલ એગ્રી એક્સપોર્ટ અને લક્ઝરી કેટરીંગ સેવાઓ. પ્રીમિયમ ડીહાઇડ્રેટેડ ફૂડ નિકાસ અને ઇવેન્ટ કેટરીંગ.",btn:"સંપર્ક કરો"}
+};
+
+function changeLanguage(lang){
+  document.getElementById('hero-title').innerHTML = `${translations[lang].title} <br><span class="flowing-text">Coral Delights</span>`;
+  document.getElementById('hero-desc').innerText = translations[lang].desc;
+  document.getElementById('nav-btn-text').innerText = translations[lang].btn;
+  document.documentElement.lang = lang;
+}
+
+function switchDomain(domainId, btn){
+  document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById(domainId).classList.add('active');
+  btn.classList.add('active');
+}
+
+// Used by footer links
+function goTo(id){
+  const idx = id === 'exports' ? 0 : 1;
+  switchDomain(id, document.querySelectorAll('.tab-btn')[idx]);
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function openSpecModal(name, moisture, shelf, packaging, certs){
+  document.getElementById('modalProductName').innerText = name;
+  document.getElementById('modalMoisture').innerText = moisture;
+  document.getElementById('modalShelf').innerText = shelf;
+  document.getElementById('modalPackaging').innerText = packaging;
+  document.getElementById('modalCerts').innerText = certs;
+  document.getElementById('specModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeSpecModal(){
+  document.getElementById('specModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeSpecModal(); });
+
+let selectedDishes = [];
+function updateMenuSelection(){
+  selectedDishes = [];
+  document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked').forEach(cb => selectedDishes.push(cb.value));
+  const box = document.getElementById('selectedItemsSummary');
+  const count = document.getElementById('selectedCount');
+  if(selectedDishes.length === 0){
+    box.innerHTML = 'No items selected yet. Please check the options on the left.';
+    count.hidden = true;
+  } else {
+    box.innerHTML = '<ul style="padding-left:18px;">' + selectedDishes.map(d => `<li style="margin-bottom:4px;color:#fff;">${d}</li>`).join('') + '</ul>';
+    count.textContent = selectedDishes.length + ' selected';
+    count.hidden = false;
+  }
+}
+
+function requestSample(productName){
+  const msg = encodeURIComponent(`Hello Coral Delights! I would like to request a sample kit and export specifications for: ${productName}.`);
+  window.open(`${WA}?text=${msg}`, '_blank', 'noopener');
+}
+
+function enquireOccasion(name){
+  const msg = encodeURIComponent(`Hello Coral Delights! I am planning ${name === 'a custom occasion' ? name : 'a ' + name} and would like to know about catering options and pricing.`);
+  window.open(`${WA}?text=${msg}`, '_blank', 'noopener');
+}
+
+function sendMenuWhatsApp(){
+  const guests = document.getElementById('menuGuestCount').value;
+  if(selectedDishes.length === 0){
+    alert('Please select at least one item from the menu builder options!');
+    return;
+  }
+  const msg = encodeURIComponent(`Hello Coral Delights! I have selected a custom event menu:\n\n*Guests:* ${guests}\n*Selected Dishes:* ${selectedDishes.join(', ')}\n\nPlease share estimated pricing and availability.`);
+  window.open(`${WA}?text=${msg}`, '_blank', 'noopener');
+}
+</script>
 </body>
 </html>
